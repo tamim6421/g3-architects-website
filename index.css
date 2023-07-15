@@ -1,10 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Rubik:wght@800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Rubik:wght@800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-*{
-font-family: 'Open Sans', sans-serif;
-font-family: 'Work Sans', sans-serif;
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+/* header styles */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 30px;
+
+}
+
+nav ul a {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #424242;
+    text-decoration: none;
+}
+
+.logo {
+    color: #131313;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* banner section style */
+.banner_img{
+    width: 100%;
+}
+.banner_content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 70px;
+   
+
+}
+.bnnet_title {
+    color: #131313;
+    text-align: center;
+    font-size:4rem;
+    font-weight: 700;
+    
+}
+.banner_description{
+    color:#727272;
+    font-size:1rem;
+    font-weight: 400;
+    
+}
+ .bttn{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 10px 15px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* responsive mediaQuary */
+
+/* mobile devices */
+@media screen and (max-width:576px){
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* tablet devices */
+@media screen and (min-width:576px) and (max-width:992px){
+    header{
+        padding: 40px;
+    }
+    nav{
+        flex-direction: column;
+    }
+
 }
