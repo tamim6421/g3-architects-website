@@ -46,31 +46,35 @@ nav ul a {
 }
 
 /* banner section style */
-.banner_img{
+.banner_img {
     width: 100%;
 }
-.banner_content{
+
+.banner_content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
     margin-top: 70px;
-   
+
 
 }
+
 .bnnet_title {
     color: #131313;
     text-align: center;
-    font-size:4rem;
+    font-size: 4rem;
     font-weight: 700;
-    
+
 }
-.banner_description{
-    color:#727272;
-    font-size:1rem;
+
+.banner_description {
+    color: #727272;
+    font-size: 1rem;
     font-weight: 400;
-    
+
 }
- .bttn{
+
+.bttn {
     border-radius: 8px;
     background: #FF900E;
     padding: 10px 15px;
@@ -83,25 +87,117 @@ nav ul a {
     margin-bottom: 30px;
 }
 
+/* main styles */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* teams styles */
+.featurs_section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.image_contaier {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+.image_contaier img{
+    width: 300px;
+}
+
+.fratures_contant {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.features_title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.quick {
+    color: #727272;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+.our {
+    color: #131313;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.features {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
 /* responsive mediaQuary */
 
 /* mobile devices */
-@media screen and (max-width:576px){
-    header{
+@media screen and (max-width:576px) {
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
+    }
+    .bnnet_title{
+        font-size: 2em;
+    }
+    .featurs_section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .fratures_contant {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .image_contaier {
+        grid-template-columns: 1fr;
     }
 }
 
 /* tablet devices */
-@media screen and (min-width:576px) and (max-width:992px){
-    header{
+@media screen and (min-width:576px) and (max-width:992px) {
+    header {
         padding: 40px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 
+    .featurs_section {
+        flex-direction: column;
+    }
+
+    .image_contaier {
+        /* width: 60%; */
+    }
 }
