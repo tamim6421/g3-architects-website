@@ -108,7 +108,8 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
 }
-.image_contaier img{
+
+.image_contaier img {
     width: 300px;
 }
 
@@ -148,10 +149,43 @@ main {
     font-weight: 700;
 }
 
+/* facts section */
+.some_facts {
+    color: #131313;
+    font-size: 2rem;
+    font-weight: 700;
+}
 
+.facts {
+    width: 90%;
+    margin: auto;
+}
 
+.facts_container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
 
+.facts_container .card {
+    border-radius: 8px;
+    border: 1px solid salmon;
+    text-align: center;
+    padding: 30px;
 
+}
+
+.facts_container .cards {
+    color: #424242;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.facts_container .card_title {
+    color:#727272;
+    font-size:1rem;
+    font-weight: 600;
+}
 
 
 /* responsive mediaQuary */
@@ -165,9 +199,11 @@ main {
     nav {
         flex-direction: column;
     }
-    .bnnet_title{
+
+    .bnnet_title {
         font-size: 2em;
     }
+
     .featurs_section {
         flex-direction: column;
         width: 100%;
@@ -200,4 +236,10 @@ main {
     .image_contaier {
         /* width: 60%; */
     }
+    /* .facts_container{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        width: 90%;
+        margin: auto;
+    } */
 }
