@@ -175,6 +175,7 @@ main {
     font-weight: 700;
     border-left: 5px solid salmon;
     padding-left: 10px;
+    margin-bottom: 20px;
 }
 
 .love_des {
@@ -201,13 +202,13 @@ main {
     padding: 30px;
     position: relative;
     bottom: 90px;
-    left:-40px;
+    left: -40px;
 }
 
 .years_badge p {
     color: #FFF;
     font-family: Work Sans;
-    font-size:1.5rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
 }
@@ -215,10 +216,10 @@ main {
 .badge_title {
     color: #FFF;
     text-align: center;
-    font-size:2.2rem;
+    font-size: 2.2rem;
     font-style: normal;
     font-weight: 700;
-    
+
 }
 
 /* facts section */
@@ -289,6 +290,24 @@ main {
     padding: 10px;
 }
 
+.footer {
+    width: 90%;
+    margin: 100px auto;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 30px;
+}
+
+.footer p {
+    color: #424242;
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
 /* responsive mediaQuary */
 
 /* mobile devices */
@@ -298,7 +317,8 @@ main {
     }
 
     nav,
-    .sponsor_img_container,.loves_container {
+    .sponsor_img_container,
+    .loves_container {
         flex-direction: column;
     }
 
@@ -333,8 +353,9 @@ main {
         width: 165px;
 
     }
-    .years_badge{
-        position:static ;
+
+    .years_badge {
+        position: static;
         max-width: 300px;
         margin: auto;
     }
@@ -351,7 +372,8 @@ main {
     }
 
     .featurs_section,
-    .sponsor_img_container,.loves_container {
+    .sponsor_img_container,
+    .loves_container {
         flex-direction: column;
     }
 
@@ -372,10 +394,10 @@ main {
 
     }
 
-    .years_badge{
+    .years_badge {
         max-width: 300px;
         margin: auto;
-        bottom:80px;
+        bottom: 80px;
         position: relative;
     }
 }
