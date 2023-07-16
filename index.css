@@ -110,7 +110,7 @@ main {
 }
 
 .image_contaier img {
-    width: 300px;
+    width:260px;
 }
 
 .fratures_contant {
@@ -182,11 +182,39 @@ main {
 }
 
 .facts_container .card_title {
-    color:#727272;
-    font-size:1rem;
+    color: #727272;
+    font-size: 1rem;
     font-weight: 600;
 }
 
+/* sponsors sections */
+.sponsor_title {
+    color: #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.spon_descriptions {
+    color: #727272;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sponsor_img_container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}
 
 /* responsive mediaQuary */
 
@@ -196,7 +224,7 @@ main {
         padding: 20px;
     }
 
-    nav {
+    nav,.sponsor_img_container {
         flex-direction: column;
     }
 
@@ -212,10 +240,24 @@ main {
     .fratures_contant {
         padding-left: 20px;
         padding-right: 20px;
+        margin-top: 40px;
+        margin-bottom: 50px;
     }
 
     .image_contaier {
         grid-template-columns: 1fr;
+    }
+
+    .facts_container {
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .sponsor_img_container img{
+        width: 165px;
+
     }
 }
 
@@ -229,17 +271,27 @@ main {
         flex-direction: column;
     }
 
-    .featurs_section {
+    .featurs_section, .sponsor_img_container {
         flex-direction: column;
     }
-
     .image_contaier {
-        /* width: 60%; */
+    
     }
-    /* .facts_container{
+    .fratures_contant {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    .facts_container {
         display: grid;
-        grid-template-columns:repeat(2,1fr);
+        grid-template-columns: repeat(2, 200px);
+        gap: 10px;
         width: 90%;
         margin: auto;
-    } */
+        margin-top: 50px;
+
+    }
+    .sponsor_img_container{
+
+    }
 }
